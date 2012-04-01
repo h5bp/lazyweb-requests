@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lazy Web Requests</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='http://fonts.googleapis.com/css?family=Abel|Yellowtail|Lilita+One' rel='stylesheet' type='text/css'>
+		<link href='css/style.css' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<header>
+			<h1>Lazy Web Requests</h1>
+			<h2>great ideas that need a helping hand</h2>
+		</header>
+		<section id="about">
+			<h3>About</h3>
+			<p>12 months ago, I opened up <a href="https://github.com/paulirish/lazyweb-requests/issues">a repo</a> on Github; the idea was that my ideas were great and I didn't have time to complete them all, so I wrote them for other people to do. (lol) In reality, all of us have way more time than ideas, but it turned out some of the ideas I had were totally shared by other people, we just didn't have a meeting place to collaborate.</p>
+			<p><a href="https://github.com/paulirish/lazyweb-requests/issues">lazyweb-requests</a> was set up to help front-end developers do better work by making their jobs easier.</p>
+			<p>Let me give you a summary of what's happened since launch.</p>
+		</section>
+		<section id="completed">
+			<h3>Graduated</h3>
+			<div id="graduated-ideas"></div>
+		</section>
+		<section id="ongoing">
+			<h3>On going</h3>
+			<div id="ongoing-ideas"></div>
+			<p><a href="https://github.com/paulirish/lazyweb-requests/issues">&amp; more</a></p>
+		</section>
+		<section id="writeups">
+			<h3>Highlights</h3>
+			<!-- Give article an issue num and use Markdown -->
+			<!-- add markdown class to anything -->
+			<article id="issue53">
+				<div class="markdown">
+#### MotherEffingAnimatedGIF ####
+What started out as a simple enough idea from [Paul Irish] to get the drag 'n drop UI of [Drop Mocks] and the GIF power of [JSGIFF] quickly became a massive success for Lazy Web Requests.
+
+The project was opened on 2012-02-15 20:08:50 and the [mothereffinganimatedgif] site was launched less than ***24 hours later***! 
+
+19 participants took part in the making of this project and without them I'm sure it wouldn't have been possible to get it complete in such a short time.
+
+   [Paul Irish]: http://paulirish.com/
+   [mothereffinganimatedgif]: http://mothereffinganimatedgif.com/
+   [Drop Mocks]: http://www.dropmocks.com/
+   [JSGIFF]: https://github.com/antimatter15/jsgif
+				</div>
+			</article>
+		</section>
+		<footer>
+			<section id="contribute">
+				<h3>Contribute</h3>
+				<p>All-in-all the experiment has been very successful. Lots of developers entering into contributing to open source look for great projects. &lt;&lt;&lt; kill? Github issues have also worked extremely well as a point of collaboration. If you're interested in contributing, please "enable notifications for this issue" or toss a comment on a thread.</p>
+				<p><b>**</b> Another realization from this project is that many of these solutions were already written by developers, but aren't very googleable things, so they don't get the visibility they need. Curated lists like the <a href="https://gist.github.com/help.github.com/userscripts-and-bookmarklets/">Github userscripts page</a>, the <a href="https://github.com/bebraw/jswiki/wiki">jswiki</a> and the <a href="https://bit.ly/polyfills">Modernizr polyfills</a> wiki page do a great job of exposing developer's projects to developers when Google fails.</p>
+				<p><b>**</b> Also, and this was touched on recently by Addy Osmani's post on <a href="https://gist.github.com/addyosmani.com/blog/getting-involved-with-open-source/">Getting involved in Open Source</a>, developers tend to be prone to launching their own competing project instead of contributing to an existing one. Hitting a point of critical mass in open source software seems particularly challenging. I wonder if there are ways to ameliorate</p>
+				<p>Many new projects have been added as well. <strong>If you're looking for a new side project, the ones here would greatly help the web community</strong>. Take a poke around some of them!</p>
+			</section>
+			<section id="createdby" class="contributers">
+				<h3>Created By</h3>
+				<p>
+					<a href="http://paulirish.com"><img width="50" height="50" src="http://api.twitter.com/1/users/profile_image/paul_irish?size=normal" alt=""> Paul Irish <br><i>Google Chrome, jQuery</i></a>
+				</p>
+			</section>
+			<section id="with" class="contributers">
+				<h3>With</h3>
+				<p>
+					<a href="http://twitter.com/divya">
+						<img src="http://api.twitter.com/1/users/profile_image/divya?size=normal" alt="Divya Manian ">
+						Divya Manian <br><i>Web Opener @ Opera</i>
+					</a>
+					<a href="http://twitter.com/aaronlayton">
+						<img src="http://api.twitter.com/1/users/profile_image/aaronlayton?size=normal" alt="Aaron Layton">
+						Aaron Layton <br><i>Front-end Designer/Developer</i>
+					</a>
+				</p>
+				<p><a href="https://github.com/paulirish/lazyweb-requests/issues">&amp; more</a></p>
+			</section>
+		</footer>
+		
+		<script type="text/html" id="issue-project">
+			{{#data}}
+			<article class="project">
+				<span class="issueNum"><a href="{{html_url}}">#{{number}}</a></span>
+				<a class="user" href="https://github.com/{{user.login}}">
+					<img src="http://www.gravatar.com/avatar/{{user.gravatar_id}}?s=40" />
+				</a>
+				<span class="percentage">
+					<meter min="0" max="100" low="25" high="100" value="{{progress}}"></meter>
+				</span>
+				<div class="title"><a href="{{html_url}}">{{title}}</a></div>
+				
+				<span class="comments">Comments ({{comments}})</span>
+				<span class="date">Last Updated ({{updated_at}})</span>
+				<span class="writeup"><a href="#issue{{number}}">Read about it</a></span>
+			</article>
+			{{/data}}
+		</script>
+		<script type="text/html" id="graduate-project">
+			{{#data}}
+			<article class="project graduated">
+				<span class="issueNum"><a href="{{html_url}}">#{{number}}</a></span>
+				<a class="user" href="https://github.com/{{user.login}}">
+					<img src="http://www.gravatar.com/avatar/{{user.gravatar_id}}?s=40" />
+				</a>
+				<span class="cap">
+					<img src="img/graduate.png" width="48" height="48" alt="Graduated" />
+				</span>
+				<div class="title"><a href="{{html_url}}">{{title}}</a></div>
+				
+				<span class="comments">Comments ({{comments}})</span>
+				<span class="date">Completed on ({{closed_at}})</span>
+				<span class="writeup"><a href="#issue{{number}}">Read about it</a></span>
+			</article>
+			{{/data}}
+		</script>
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    	<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
+		<script src="js/mustache.js"></script>
+		<script src="js/showdown.js"></script>
+		<script src="js/script.js"></script> 
+	</body>
+</html>
