@@ -4,7 +4,7 @@ The [H5BP organization](http://h5bp.github.com) is a community of developers cre
 
 ## Submitting an idea or request
 
-All individual ideas start life in the [issue tracker](https://github.com/h5bp/lazyweb-requests).
+All individual ideas start life in the [issue tracker](https://github.com/h5bp/lazyweb-requests/issues).
 
 Once an idea has been fleshed out and has interest from a group of people who want to work on it, we can create a repository and assign an initial core team to build it. That team will have full control over how the project is executed.
 
