@@ -1,6 +1,6 @@
 # H5BP lazyweb requests: get projects and ideas built
 
-The [H5BP organization](http://h5bp.github.com) is a community of developers creating open source software. This is a place to submit ideas for new projects and to get involved in building them.
+The [H5BP organization](https://h5bp.github.io) is a community of developers creating open source software. This is a place to submit ideas for new projects and to get involved in building them.
 
 ## Submitting an idea or request
 
@@ -12,4 +12,4 @@ Everyone else is free to submit pull requests to the project's repository and th
 
 ## Requesting your project be moved to H5BP
 
-Do you have a good idea that you've already started work on? Do you want others to collaborate with you on the project and promotion? Submit an issue describing your idea and requesting that your repository be moved under the [H5BP organization](http://h5bp.github.com) and worked on by the H5BP members.
+Do you have a good idea that you've already started work on? Do you want others to collaborate with you on the project and promotion? Submit an issue describing your idea and requesting that your repository be moved under the [H5BP organization](https://h5bp.github.io) and worked on by the H5BP members.
