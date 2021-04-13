@@ -1,3 +1,5 @@
+This repo has been archived. There hasn't been much activity for a whole so it just makes sense. Thanks for everything, everyone!
+
 # H5BP lazyweb requests: get projects and ideas built
 
 The [H5BP organization](https://h5bp.github.io) is a community of developers creating open source software. This is a place to submit ideas for new projects and to get involved in building them.
